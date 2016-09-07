@@ -52,5 +52,9 @@ while i < len(a):
 ...             c.append(a[i]+k[i][j])
 ...             j+=1
 ...     i+=1'''
-print d                              #List of all cars
-print "Time taken =",time.time() - q
+
+print d  # List of all cars
+# time.sleep(0.5)
+print
+print "Total No of cars=", len(d)
+print "Total time taken=", time.time() - q, "seconds"
