@@ -23,7 +23,7 @@ driver.find_element_by_css_selector("a[title*='" + user_input + "']").click()
 
 #######################################################################################################################
 
-g1=[]
+g1=[user_input]
 driver.find_element_by_css_selector("a[title*='Specs']").click()
 keyf_collection = driver.find_elements_by_xpath("//table[@class='keyfeature']/tbody/tr")
 #Displays key features
@@ -40,11 +40,11 @@ while g3<len(g1):
     g2.append(g1[g3].encode('UTF8'))
     g3+=1
 g2=[g2]
-#3print g2
+print g2
 
 #######################################################################################################################
 
-g4=[]           #!!!!!!!!!!!!g4 ni sheri akk.........
+'''g4=[]           #!!!!!!!!!!!!g4 ni sheri akk.........
 
 techf_collection = driver.find_elements_by_xpath("//div[@class='specinner']/div/table")
 #Displays technical specs
@@ -64,7 +64,7 @@ for li in range(len(techf_collection)):
             elif('has' in j.get_attribute('title')):
                 print "True",
                 #g4.append('True')
-    #time.sleep(10)
+    #time.sleep(10)'''
 
     
 
