@@ -71,7 +71,7 @@ car = {user_input: category}
 # print category
 print car
 
-# print
-# print "Time taken = ",time.time()-q," seconds"
+print
+print "Time taken = ",time.time()-q," seconds"
 
 driver.close()
